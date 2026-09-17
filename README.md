@@ -3,7 +3,7 @@
 
 ## I know, we fought very well, and you don't talk to me again. but still I forgot to tell you this ..
 
-##### Please go through part 1 thoroughly...
+#### Please go through part 1 thoroughly...
 
 📱 Termux — The Pocket Computer
 
