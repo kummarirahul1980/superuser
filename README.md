@@ -44,11 +44,11 @@ Two applications are needed on the phone.
 
 Termux
 
-"Download Termux" (https://f-droid.org/repo/com.termux_1022.apk)
+[Download Termux] (https://f-droid.org/repo/com.termux_1022.apk)
 
 bVNC
 
-"Install bVNC" (https://play.google.com/store/apps/details?id=com.iiordanov.freebVNC)
+[Install bVNC] (https://play.google.com/store/apps/details?id=com.iiordanov.freebVNC)
 
 Once both are installed, the pocket computer is ready.
 
