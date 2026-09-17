@@ -3,6 +3,8 @@
 
 ## I know, we fought very well, and you don't talk to me again. but still I forgot to tell you this ..
 
+##### Please go through part 1 thoroughly...
+
 📱 Termux — The Pocket Computer
 
 A phone is already an ARM64 computer.
@@ -61,22 +63,30 @@ Termux is opened.
 
 Its packages are updated:
 
+```Termux
 pkg update
 pkg upgrade
+```
 
 The graphical repository is enabled:
 
+```Termux
 pkg install x11-repo
+```
 
 The VNC server and window manager are installed:
 
+```Termux
 pkg install tigervnc
 pkg install xfwm4
+```
 
 The two main graphical applications are installed:
 
+```Termux
 pkg install firefox
 pkg install code-is-code-oss
+```
 
 There is deliberately no desktop environment here.
 
@@ -88,7 +98,9 @@ There is deliberately no desktop environment here.
 
 The display needs a password.
 
+```Termux
 vncpasswd
+```
 
 A new password is created when requested.
 
@@ -102,15 +114,21 @@ bVNC will use it when connecting.
 
 The graphical display is created:
 
+```Termux
 vncserver :1
+```
 
 The display is:
 
+```Info but not a command
 :1
+```
 
 Its VNC port is:
 
+```Info but not a command
 5901
+```
 
 The display now exists.
 
@@ -122,11 +140,15 @@ Graphical applications need to know where their windows should appear.
 
 The current display is selected:
 
+```Termux
 export DISPLAY=:1
+```
 
 The window manager is started:
 
-xfwm4 &
+```Termux
+xfwm4 & # & ensures command to be ran in background 
+```
 
 Now the graphical session has a window manager.
 
@@ -140,7 +162,11 @@ A new VNC connection is created.
 
 The address is:
 
+```BVnc app info not termux command
 localhost:5901
+
+in application, you can also select search, it automatically shows the available displays. Select `::1:50xx`
+```
 
 The password created earlier is entered.
 
@@ -162,7 +188,9 @@ Applications create their own windows, and "xfwm4" manages those windows.
 
 The first graphical application can now be launched:
 
+```Termux command to launch firefox
 firefox &
+```
 
 Firefox appears on the VNC display.
 
@@ -188,7 +216,9 @@ Firefox is now running directly inside the Termux environment.
 
 Code OSS is available in the same way:
 
+```Termux command to launch vscode
 code &
+```
 
 It appears on the same display.
 
